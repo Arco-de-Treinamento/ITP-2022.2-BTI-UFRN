@@ -1,8 +1,3 @@
-// o 1° e o 3° teste realmente estao com a saida esperada correta?
-// seguindo a logica da otimização, nao faz sentido lê o caractere anterior
-// se já sabemos que ele nao condiz coom o que estamos procurando.
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
