@@ -30,8 +30,11 @@ void printMatrix(Matrix *m){
     }
 }
 
-// Tenho a sensação que isso é uma gambiarra, mas fiz segundo alguns artigos
-void destroyMatrix(Matrix **m){ *m = NULL; }
+void destroyMatrix(Matrix **m){ 
+    for(int i = 0; i < (*m)->nlin; i++) free((*m)->mat[i]);
+    free((*m)->mat);
+    *m = NULL; 
+    }
 
 int main() {
     int lin, col;
