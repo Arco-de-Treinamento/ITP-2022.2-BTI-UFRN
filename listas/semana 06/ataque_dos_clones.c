@@ -14,7 +14,7 @@ Matriz* alocMatriz(int nrow, int ncol){
     matriz.ncol = ncol;
 
     matriz.matriz = malloc(sizeof(int*) * nrow);
-    for(int i = 0; i < nrow; i++) matriz.matriz[i] = malloc(sizeof(int) * nrow);
+    for(int i = 0; i < nrow; i++) matriz.matriz[i] = malloc(sizeof(int) * ncol);
 
     for(int r = 0; r < matriz.nrow; r++){
         for(int c = 0; c < matriz.ncol; c++) matriz.matriz[r][c] = MINIMO;
